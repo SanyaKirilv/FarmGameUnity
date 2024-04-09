@@ -1,0 +1,15 @@
+{
+  "HexData": [
+    {
+      "HexName": "0, 0",
+      "HexState": "Occupied",
+      "UnlockLevel": 0,
+      "BuildingData": {
+        "Name": "Food",
+        "Tier": 2,
+        "BuildingState": "Available",
+        "ElapsedTime": 0
+      }
+    }
+  ]
+}
