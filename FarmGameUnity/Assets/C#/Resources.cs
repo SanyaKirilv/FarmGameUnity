@@ -1,5 +1,5 @@
 [System.Serializable]
-public class Resources
+public class Resource
 {
     public int Food;
     public int Wood;

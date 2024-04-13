@@ -2,7 +2,7 @@
 public class ProductionType
 {
     public string Name;
-    public Resources InResources;
-    public Resources OutResources;
+    public Resource InResources;
+    public Resource OutResources;
     public Time Time;
 }

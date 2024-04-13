@@ -9,7 +9,7 @@ public class GameDataController : MonoBehaviour
     private string DataFilePath => Path.Combine(Application.persistentDataPath, DataFileName);
     private string DataFileName => $"_data.json";
 
-    private void Awake() => print(DataFilePath);//LoadData();
+    private void Awake() => LoadData();
 
     public void SaveData() => File.WriteAllText(DataFilePath, JsonUtility.ToJson(GameData));
 

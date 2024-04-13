@@ -82,6 +82,10 @@ public class HexController : MonoBehaviour
     }
 
     private void OnApplicationQuit() {
+        for(int i = 0; i < Hexes.Count; i++)
+        {
+            GameDataController.GameData.HexData[i] = Hexes[i].HexData;
+        }
         GameDataController.SaveData();
     }
 }
