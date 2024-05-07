@@ -8,6 +8,12 @@ class CameraControl : MonoBehaviour
     public Vector2 min, max;
     protected Plane Plane;
 
+    private void OnEnable() => BuildingTouch.OnBuildingTouched += ToggleObj;
+
+    private void OnDisable() => BuildingTouch.OnBuildingTouched -= ToggleObj;
+
+    private void ToggleObj(HexManager hexManager) => this.gameObject.SetActive(false);
+
     private void Awake()
     {
         if (Camera == null)
